@@ -32,7 +32,7 @@ public class Product {
     private Long quantity;
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, precision = 38, scale = 2)
     private BigDecimal price;
 
     public Product() { }

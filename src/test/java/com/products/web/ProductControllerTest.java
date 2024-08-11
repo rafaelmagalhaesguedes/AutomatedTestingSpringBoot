@@ -79,10 +79,10 @@ public class ProductControllerTest {
 
     @Test
     public void getProduct_ByExistingId_ReturnsProduct() throws Exception {
-        when(service.get(PRODUCT.getId())).thenReturn(Optional.of(PRODUCT));
+        when(service.get(P1.getId())).thenReturn(Optional.of(P1));
 
-        mockMvc.perform(get("/products/" + PRODUCT.getId())
-                        .content(objectMapper.writeValueAsString(PRODUCT))
+        mockMvc.perform(get("/products/" + P1.getId())
+                        .content(objectMapper.writeValueAsString(P1))
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
