@@ -1,0 +1,3 @@
+INSERT INTO products (id, name, description, category, quantity, price) VALUES (1, 'Product 001', 'Product 001 description.', 'AUTOMOTIVE', 10, 100.00);
+INSERT INTO products (id, name, description, category, quantity, price) VALUES (2, 'Product 002', 'Product 002 description.', 'HEALTH', 20, 200.00);
+INSERT INTO products (id, name, description, category, quantity, price) VALUES (3, 'Product 003', 'Product 003 description.', 'SPORT', 30, 300.00);
