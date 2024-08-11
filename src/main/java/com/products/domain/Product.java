@@ -1,5 +1,6 @@
 package com.products.domain;
 
+import com.products.jacoco.ExcludeFromJacocoGeneratedReport;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -107,6 +108,7 @@ public class Product {
         this.price = price;
     }
 
+    @ExcludeFromJacocoGeneratedReport
     @Override
     public String toString() {
         return "Product{" +
