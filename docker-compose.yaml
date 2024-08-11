@@ -1,0 +1,10 @@
+version: '4'
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:8.0.32
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: products
