@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Example;
 import org.springframework.test.context.jdbc.Sql;
 
@@ -16,6 +17,11 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Repository layer x Database integration tests
+ *
+ * @RafaGuedes
+ */
 @DataJpaTest
 public class ProductRepositoryTest {
     @Autowired
@@ -128,12 +134,4 @@ public class ProductRepositoryTest {
         var removedProduct = testEntityManager.find(Product.class, product.getId());
         assertThat(removedProduct).isNull();
     }
-
-    /* *
-    @Test
-    public void removeProduct_WithUnexistingId_ThrowsException() {
-        assertThatThrownBy(() -> repository.deleteById(PRODUCT.getId()))
-                .isInstanceOf(EmptyResultDataAccessException.class);
-    }
-    */
 }

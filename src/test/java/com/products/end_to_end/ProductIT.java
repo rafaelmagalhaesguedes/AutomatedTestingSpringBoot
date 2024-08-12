@@ -1,4 +1,4 @@
-package com.products;
+package com.products.end_to_end;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static com.products.mock.ProductMock.*;
@@ -15,6 +15,11 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
 
+/**
+ * End-to-End testing
+ *
+ * @RafaGuedes 12/07/2024
+ */
 @ActiveProfiles("it")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Sql(scripts = { "/import_products.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)

@@ -20,6 +20,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Service layer unit tests
+ *
+ * @RafaGuedes
+ */
 @ExtendWith(MockitoExtension.class)
 public class ProductServiceTest {
 

@@ -28,6 +28,11 @@ import java.math.BigDecimal;
 import java.util.Collections;
 import java.util.Optional;
 
+/**
+ * Web layer x Controllers integration tests
+ *
+ * @RafaGuedes
+ */
 @WebMvcTest(ProductController.class)
 public class ProductControllerTest {
 
