@@ -1,5 +1,13 @@
 # Products Microservice API (ms-products-api)
 
+## 💻 Project
+
+The project is highly focused on ensuring code quality and reliability
+through a wide range of **automated tests**, including **unit** tests,
+**integration**, **end-to-end** and **mutant** testing. Use Jacoco for coverage analysis
+of tests. Technologies used include Spring Boot Test, JUnit 5, Mockito,
+AssertJ, Hamcrest, JsonPath, Jacoco and Pitest.
+
 ## ✨ Technologies
 
 - [Mysql](https://dev.mysql.com/downloads/mysql/)
@@ -14,13 +22,6 @@
 - [Jacoco](https://github.com/jacoco/jacoco)
 - [Pitest](https://pitest.org)
 
-## 💻 Project
-
-The project is highly focused on ensuring code quality and reliability
-through a wide range of **automated tests**, including **unit** tests,
-**integration**, **end-to-end** and **mutant** testing. Use Jacoco for coverage analysis
-of tests. Technologies used include Spring Boot Test, JUnit 5, Mockito,
-AssertJ, Hamcrest, JsonPath, Jacoco and Pitest.
 
 ## 🐳 Database with Docker
 
