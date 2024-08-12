@@ -1,4 +1,4 @@
-# Products Microservice API (ms-products-api)
+# Automated Testing with Spring Boot (unit, integration, end-to-end, subcutaneous tests)
 
 ## 💻 Project
 
